@@ -98,13 +98,36 @@ width: 1158px;
 
 .menu:active{
     color: #404BBF;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4,
+        0,
+        0.2,
+        1);
 }
 .menu:focus{
     color: #404BBF;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
 }
 .menu:hover{
     color: #404BBF;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
 }
+
+.menu::after{
+border-radius: 2px;
+
+}
+
+
+
 .contact{
 font-style: normal;
 display: flex;
@@ -127,12 +150,27 @@ display: flex;
 }
 .contact-link:active{
     color: #404BBF;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
 }
 .contact-link:hover{
     color: #404BBF;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
 }
 .contact-link:focus{
     color: #404BBF;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
 }
 .page-sectio{
     background: #2E2F42;
@@ -174,9 +212,20 @@ display: flex;
 }
 .btn:hover{
         background: #404BBF;
+        transition-duration: 250ms;
+            transition-timing-function: cubic-bezier(0.4,
+                    0,
+                    0.2,
+                    1);
 }
 .btn:focus{
     background: #404BBF;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
+    
 }
 
 
@@ -213,6 +262,7 @@ display: flex;
 .section-our-team {
     background: #F4F4FD;
     padding: 120px 0;
+    
 }
 
 .section-our-team .links{
@@ -220,8 +270,10 @@ display: flex;
     gap: 24px;
 
 }
+
+
 .worker-info{
-    padding: 32px 0;
+    padding-top: 32px;
 }
 
 .title-our-team{
@@ -239,6 +291,7 @@ display: flex;
     background-color: #FFFFFF;
         width: calc((100% - 72px) / 4);
         border-radius: 0px 0px 4px 4px;
+        box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
 }
 
 .section-our-team .title{
@@ -287,7 +340,22 @@ display: flex;
         line-height: 1.11;
         letter-spacing: 0.72px;
         text-transform: capitalize;
+        
 }
+.cashless-payment:hover{
+    box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08), 0px 1px 1px 0px rgba(46, 47, 66, 0.16), 0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
+    
+}
+
+
+
+
+
 .footer-logo{
     color: #4D5AE5;
     font-family: Raleway, sans-serif;
@@ -310,4 +378,87 @@ max-width: 264px;
     background-color: #2E2F42;
     padding: 100px 0;
     max-height: 312px;
+}
+
+.footer-box .title{
+    color: var(--WHITE, #FFF);
+        font-weight: 500;
+        margin-bottom: 16px;
+}
+
+.footer-box .container{
+    display: flex;
+    gap: 120px;
+}
+.footer-webstudio{
+    display: block;
+    gap: 16px;
+    margin-bottom: 100px;
+ 
+}
+
+
+.footer-icon-meseng{
+    display: block;
+    gap: 16px;
+    margin-bottom: 132px;
+}
+
+.footer-icon-meseng .title{
+    margin-left: 16px;
+}
+
+.footer-box .icon-meseng:hover{
+    background-color: #31d0aa;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
+}
+
+.footer-box .icon-meseng:focus{
+    background-color: #31d0aa;
+    transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4,
+                0,
+                0.2,
+                1);
+}
+
+.icon{
+    width: 264px;
+        height: 112px;
+        flex-shrink: 0;
+        justify-content: center;
+border-radius: 4px;
+    border: 1px solid var(--LIGHT-SLATE, #8E8F99);
+    background: var(--CLOUD, #F4F4FD);
+    padding: 24px 100px;
+    margin-bottom: 8px;
+}
+
+.container-icon-meseng{
+display: flex;
+    gap: 24px;
+    margin-left: 16px;
+margin-right: 16px;
+margin-top: 8px;
+}
+
+.icon-meseng{
+fill: #F4F4FD;
+justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    padding: 12px;
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background-color: #4D5AE5;
+margin-bottom: 32px;
+
+}
+.icon-meseng:hover,:focus{
+    background-color: #404BBF;
 }
